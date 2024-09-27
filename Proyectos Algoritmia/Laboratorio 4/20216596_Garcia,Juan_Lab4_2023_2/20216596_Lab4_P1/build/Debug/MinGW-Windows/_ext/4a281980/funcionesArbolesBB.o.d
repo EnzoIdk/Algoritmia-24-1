@@ -1,0 +1,17 @@
+build/Debug/MinGW-Windows/_ext/4a281980/funcionesArbolesBB.o: \
+ d:/Users/alulab14/Downloads/ArbolesBusquedaBinarios_PilasYColas/ArbolesBusquedaBinarios_PilasYColas/funcionesArbolesBB.cpp \
+ d:/Users/alulab14/Downloads/ArbolesBusquedaBinarios_PilasYColas/ArbolesBusquedaBinarios_PilasYColas/ArbolBinario.h \
+ d:/Users/alulab14/Downloads/ArbolesBusquedaBinarios_PilasYColas/ArbolesBusquedaBinarios_PilasYColas/funcionesArbolesBB.h \
+ d:/Users/alulab14/Downloads/ArbolesBusquedaBinarios_PilasYColas/ArbolesBusquedaBinarios_PilasYColas/ArbolBinarioBusqueda.h \
+ d:/Users/alulab14/Downloads/ArbolesBusquedaBinarios_PilasYColas/ArbolesBusquedaBinarios_PilasYColas/funcionesArbolesBinarios.h \
+ d:/Users/alulab14/Downloads/ArbolesBusquedaBinarios_PilasYColas/ArbolesBusquedaBinarios_PilasYColas/NodoArbol.h
+
+d:/Users/alulab14/Downloads/ArbolesBusquedaBinarios_PilasYColas/ArbolesBusquedaBinarios_PilasYColas/ArbolBinario.h:
+
+d:/Users/alulab14/Downloads/ArbolesBusquedaBinarios_PilasYColas/ArbolesBusquedaBinarios_PilasYColas/funcionesArbolesBB.h:
+
+d:/Users/alulab14/Downloads/ArbolesBusquedaBinarios_PilasYColas/ArbolesBusquedaBinarios_PilasYColas/ArbolBinarioBusqueda.h:
+
+d:/Users/alulab14/Downloads/ArbolesBusquedaBinarios_PilasYColas/ArbolesBusquedaBinarios_PilasYColas/funcionesArbolesBinarios.h:
+
+d:/Users/alulab14/Downloads/ArbolesBusquedaBinarios_PilasYColas/ArbolesBusquedaBinarios_PilasYColas/NodoArbol.h:

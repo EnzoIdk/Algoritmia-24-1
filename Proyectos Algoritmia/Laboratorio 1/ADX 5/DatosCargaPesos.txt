@@ -1,0 +1,2 @@
+CARGA MAX. DE CAMIONES:    25   50   100    100
+PESOS DE PAQUETES:   50    20    30    50    20

@@ -1,0 +1,83 @@
+/* 
+ * File:   main.cpp
+ * Author: ANA RONCAL
+ * Created on 21 de agosto de 2023, 11:57 AM
+ */
+
+#include <iostream>
+#include "Pila.h"
+
+using namespace std;
+#include "funcionesPila.h"
+#include "funcionesLista.h"
+
+void hanoi(int n,Pila &a,Pila &b,Pila &c){
+    if(n==0) return;
+    hanoi(n-1,a,c,b);
+    int valor=desapilar(a);
+    apilar(c,valor);
+    hanoi(n-1,b,a,c);
+    
+}
+
+
+void armapila(Lista &faja,Pila &pilap){
+    Pila paux1,paux2,paux3;
+    Nodo *ptr,*ant;
+    ptr=faja.cabeza;
+    int valor;
+    construir(paux1);
+    construir(paux2);
+    construir(paux3);
+    while(ptr){
+        while(ptr->siguiente){
+            ant = ptr;
+            ptr=ptr->siguiente;
+        }
+        ant->siguiente=nullptr;
+        valor = ptr->elemento;
+        faja.longitud--;
+        if(faja.cabeza==ptr) faja.cabeza=nullptr;
+        delete ptr;
+        while(1)
+            if(esPilaVacia(pilap) || valor<=cima(pilap)){
+                apilar(pilap,valor);
+                if(!esPilaVacia(paux1))
+                    hanoi(paux1.lista.longitud,paux1,paux2,pilap);
+                imprimir(pilap);
+                break;
+            }
+            else{
+                int aux=desapilar(pilap);
+                if(!esPilaVacia(paux1)) hanoi(paux1.lista.longitud,paux1,paux2,paux3);
+                apilar(paux1,aux);
+                if(!esPilaVacia(paux3)) hanoi(paux3.lista.longitud,paux3,paux2,paux1);
+            }
+        ptr=faja.cabeza;
+    }
+}
+
+
+int main(int argc, char** argv) {
+    Lista faja;
+    
+    construir(faja);
+    insertarAlInicio(faja,501);
+    insertarAlInicio(faja,1002);
+    insertarAlInicio(faja,2001);
+    insertarAlInicio(faja,1501);
+    insertarAlInicio(faja,502);
+    insertarAlInicio(faja,2002);
+    insertarAlInicio(faja,1001);
+    
+    imprime(faja);
+    
+    struct Pila pila;
+    construir(pila);
+
+    armapila(faja,pila);
+    
+    imprimir(pila);
+    return 0;
+}
+

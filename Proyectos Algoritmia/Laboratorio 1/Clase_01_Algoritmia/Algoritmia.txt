@@ -1,0 +1,57 @@
+Algoritmia:
+CAP 1: Técnicas algorítmicas básicas para la resolución de problemas: Fuerza bruta, recursión, divide y vencerás
+
+FUERZA BRUTA:
+Se piensa en el peor de los casos
+Método directo para resolver problemas
+Consiste en aplicar pasos básicos basándose en la definición del problema
+
+Ordenación-Selección:
+89 45 68 90 29 34 17
+| 89 45 68 90 29 34 17
+17 | 45 68 90 29 34 89 ...1ra iteración
+
+
+Ordenación-Burbuja
+
+Para i<-0 hasta n-2 hacer
+	Para j<-0 hasta n-2-i hacer
+		Si A[j+1]<A[j] entonces
+			intercambiar A[j] y A[j+1]
+		Fin Si
+	Fin Para
+Fin Para
+
+Búsqueda-Sequencial:
+Dado un conjunto de valores, encontrar un elemento dado. (Buscar uno a uno)
+
+i<-0
+Mientras (i<n) y (A[i]<>K) hacer
+	i<-i+1
+Fin Mientras
+Si (i<n) entonces
+	retornar i
+Sino
+	retornar -1
+Fin Si
+
+Procesamiento de Cadenas
+
+
+Algoritmo Genético
+Algoritmo Genético Continuo (problema de la mochila)
+
+
+
+Restricción (peso)
+	Variable(s) optimizar(valor)
+
+
+
+
+
+
+
+
+
+
